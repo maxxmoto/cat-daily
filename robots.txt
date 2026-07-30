@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://maxxmoto.github.io/cat-daily/sitemap.xml
+
+# Allow all crawlers
+Crawl-delay: 10
