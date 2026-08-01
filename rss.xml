@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>u'r daily cat</title>
+    <link>https://maxxmoto.github.io/cat-daily/</link>
+    <description>Ежедневные случайные фото котиков</description>
+    <language>ru</language>
+    <lastBuildDate>Wed, 30 Jul 2026 20:00:00 +0300</lastBuildDate>
+    <atom:link href="https://maxxmoto.github.io/cat-daily/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>u'r daily cat — новый котик уже ждёт тебя!</title>
+      <link>https://maxxmoto.github.io/cat-daily/</link>
+      <description>Каждый день новый случайный котик из TheCatAPI. Заходи, лайкай и слушай мяуканье!</description>
+      <pubDate>Wed, 30 Jul 2026 20:00:00 +0300</pubDate>
+      <guid>https://maxxmoto.github.io/cat-daily/</guid>
+    </item>
+  </channel>
+</rss>

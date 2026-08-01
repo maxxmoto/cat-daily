@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>u'r daily cat</ShortName>
+  <Description>Поиск по u'r daily cat</Description>
+  <Url type="text/html" template="https://maxxmoto.github.io/cat-daily/?q={searchTerms}"/>
+  <Image width="16" height="16" type="image/png">https://maxxmoto.github.io/cat-daily/favicon-16.png</Image>
+  <Image width="96" height="96" type="image/png">https://maxxmoto.github.io/cat-daily/favicon-96.png</Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Language>ru</Language>
+  <Developer>maxxmoto</Developer>
+</OpenSearchDescription>

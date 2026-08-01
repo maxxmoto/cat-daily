@@ -1,121 +1,239 @@
 <!doctype html>
-<html lang="ru" prefix="og: https://ogp.me/ns#">
+<html lang="ru" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no" />
 
-    <title>u'r daily cat — случайные фото котиков каждый день</title>
-    <meta name="description" content="Ежедневная порция милоты: случайные фотографии котов из TheCatAPI. Можно лайкнуть котика и послушать мяуканье. Новый кот каждый день!" />
-    <meta name="keywords" content="ежедневный котик, фото кошек, рандомный кот, random cat, daily cat, thecatapi, милые коты, котики онлайн, мяу, кот дня" />
+    <!-- ======= Primary SEO ======= -->
+    <title>u'r daily cat — случайные фото котиков каждый день &#124; ежедневная порция милоты</title>
+    <meta name="description" content="Каждый день новый случайный котик! Фото котов из TheCatAPI: лайкай, слушай мяуканье, наслаждайся. Самая милая daily cat в рунете. Твоя ежедневная доза пушистой радости." />
+    <meta name="keywords" content="ежедневный котик, фото кошек, рандомный кот, random cat, daily cat, thecatapi, милые коты, котики онлайн, мяу, кот дня, каждый день кот, картинки котов, смешные коты, cute cats" />
     <meta name="author" content="maxxmoto" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="rating" content="general" />
+    <meta name="copyright" content="© 2026 maxxmoto. All rights reserved." />
+    <meta name="generator" content="Vite + React" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- ======= International / Language ======= -->
+    <meta name="language" content="Russian" />
+    <meta name="content-language" content="ru" />
+    <link rel="alternate" hreflang="ru" href="https://maxxmoto.github.io/cat-daily/" />
+    <link rel="alternate" hreflang="ru-RU" href="https://maxxmoto.github.io/cat-daily/" />
+    <link rel="alternate" hreflang="x-default" href="https://maxxmoto.github.io/cat-daily/" />
+    <meta http-equiv="content-language" content="ru" />
+
+    <!-- ======= Geo Targeting ======= -->
+    <meta name="geo.region" content="RU" />
+    <meta name="geo.placename" content="Russia" />
+    <meta name="geo.position" content="55.7558;37.6173" />
+    <meta name="ICBM" content="55.7558, 37.6173" />
+    <meta name="DC.title" content="u'r daily cat" />
+    <meta name="DC.description" content="Ежедневные случайные фото котиков" />
+    <meta name="DC.language" content="ru" />
+    <meta name="DC.publisher" content="maxxmoto" />
+    <meta name="DC.date" content="2026-07-30" />
+
+    <!-- ======= Theme & Appearance ======= -->
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F9F9F8" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16171d" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c1917" />
+    <meta name="color-scheme" content="light" />
     <meta name="application-name" content="u'r daily cat" />
-    <meta name="apple-mobile-web-app-title" content="u'r daily cat" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+    <!-- ======= Google Specific ======= -->
+    <meta name="google" content="notranslate" />
+    <meta name="google" content="nopagereadaloud" />
+    <meta name="google-site-verification" content="VERIFICATION_CODE" />
+
+    <!-- ======= Yandex Specific ======= -->
+    <meta name="yandex-verification" content="VERIFICATION_CODE" />
+    <meta name="HandheldFriendly" content="True" />
+
+    <!-- ======= Bing / Microsoft ======= -->
+    <meta name="msvalidate.01" content="VERIFICATION_CODE" />
+    <meta name="msapplication-TileColor" content="#F9F9F8" />
+    <meta name="msapplication-TileImage" content="/favicon-96.png" />
+    <meta name="msapplication-square70x70logo" content="/favicon-70.png" />
+    <meta name="msapplication-square150x150logo" content="/favicon-96.png" />
+    <meta name="msapplication-wide310x150logo" content="/og-preview.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- ======= Apple / iOS ======= -->
+    <meta name="apple-mobile-web-app-title" content="daily cat" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
 
-    <!-- Preconnect & Preload -->
+    <!-- ======= Preconnect & Preload ======= -->
     <link rel="preconnect" href="https://api.thecatapi.com" crossorigin />
     <link rel="preconnect" href="https://cdn2.thecatapi.com" crossorigin />
     <link rel="preconnect" href="https://actions.google.com" crossorigin />
     <link rel="dns-prefetch" href="https://api.thecatapi.com" />
     <link rel="dns-prefetch" href="https://cdn2.thecatapi.com" />
+    <link rel="dns-prefetch" href="https://actions.google.com" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="u'r daily cat — случайные фото котиков каждый день" />
-    <meta property="og:description" content="Ежедневная порция милоты: случайные фотографии котов. Можно лайкнуть и послушать мяуканье. Заходи каждый день!" />
+    <!-- ======= Open Graph (Facebook / VK / Telegram) ======= -->
+    <meta property="og:title" content="u'r daily cat — cлучайные фото котиков каждый день" />
+    <meta property="og:description" content="Самая милая daily cat в рунете. Каждый день новый случайный котик: лайкай, слушай мяуканье, умиляйся!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maxxmoto.github.io/cat-daily/" />
     <meta property="og:image" content="https://maxxmoto.github.io/cat-daily/og-preview.png" />
+    <meta property="og:image:secure_url" content="https://maxxmoto.github.io/cat-daily/og-preview.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="u'r daily cat — розовая иконка испуганного кота" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="u'r daily cat — розовый испуганный котик на светлом фоне" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="u'r daily cat" />
-    <meta property="og:determiner" content="" />
+    <meta property="og:updated_time" content="2026-07-30T20:00:00+03:00" />
+    <meta property="article:published_time" content="2026-07-30T20:00:00+03:00" />
+    <meta property="article:author" content="maxxmoto" />
 
-    <!-- Twitter Card -->
+    <!-- ======= Twitter Card ======= -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="u'r daily cat — случайные фото котиков каждый день" />
-    <meta name="twitter:description" content="Ежедневная порция милоты: случайные фотографии котов. Можно лайкнуть и послушать мяуканье." />
+    <meta name="twitter:description" content="Каждый день новый случайный котик! Лайкай, слушай мяуканье, умиляйся. Самая милая daily cat в рунете." />
     <meta name="twitter:image" content="https://maxxmoto.github.io/cat-daily/og-preview.png" />
-    <meta name="twitter:image:alt" content="u'r daily cat — розовая иконка испуганного кота" />
+    <meta name="twitter:image:alt" content="u'r daily cat — розовый испуганный котик" />
     <meta name="twitter:site" content="@maxxmoto" />
     <meta name="twitter:creator" content="@maxxmoto" />
     <meta name="twitter:domain" content="maxxmoto.github.io" />
 
-    <!-- Facebook -->
-    <meta property="fb:app_id" content="" />
+    <!-- ======= Pinterest Rich Pins ======= -->
+    <meta property="article:section" content="Животные" />
+    <meta name="pinterest-rich-pin" content="true" />
 
-    <!-- JSON-LD Structured Data -->
+    <!-- ======= JSON-LD Structured Data ======= -->
     <script type="application/ld+json">
     [{
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://maxxmoto.github.io/cat-daily/#website",
       "name": "u'r daily cat",
-      "alternateName": ["ur daily cat", "daily cat", "ежедневный котик"],
+      "alternateName": ["ur daily cat", "daily cat", "ежедневный котик", "кот дня"],
       "url": "https://maxxmoto.github.io/cat-daily/",
       "description": "Ежедневные случайные фото котиков с возможностью лайкать и слушать мяуканье.",
-      "inLanguage": ["ru-RU", "en"],
+      "inLanguage": ["ru-RU","en"],
       "author": {
         "@type": "Person",
+        "@id": "https://maxxmoto.github.io/cat-daily/#author",
         "name": "maxxmoto",
-        "url": "https://github.com/maxxmoto"
+        "url": "https://github.com/maxxmoto",
+        "sameAs": [
+          "https://github.com/maxxmoto"
+        ]
+      },
+      "creator": {
+        "@id": "https://maxxmoto.github.io/cat-daily/#author"
+      },
+      "publisher": {
+        "@id": "https://maxxmoto.github.io/cat-daily/#author"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://maxxmoto.github.io/cat-daily/?q={search_term_string}",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://maxxmoto.github.io/cat-daily/?q={search_term_string}"
+        },
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
+      "@id": "https://maxxmoto.github.io/cat-daily/#webpage",
       "name": "u'r daily cat — случайные фото котиков",
-      "description": "Ежедневная порция милоты: случайные фотографии котов из TheCatAPI.",
+      "description": "Ежедневная порция милоты: случайные фотографии котов из TheCatAPI. Можно лайкнуть и послушать мяуканье.",
       "url": "https://maxxmoto.github.io/cat-daily/",
       "isPartOf": {
-        "@type": "WebSite",
-        "url": "https://maxxmoto.github.io/cat-daily/"
+        "@id": "https://maxxmoto.github.io/cat-daily/#website"
       },
-      "about": {
-        "@type": "Thing",
-        "name": "коты",
-        "description": "Случайные фотографии котиков"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://maxxmoto.github.io/cat-daily/#primaryimage",
+        "url": "https://maxxmoto.github.io/cat-daily/og-preview.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "u'r daily cat — розовый испуганный котик"
       },
-      "image": "https://maxxmoto.github.io/cat-daily/og-preview.png",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "коты",
+          "description": "Случайные фотографии котиков каждый день"
+        },
+        {
+          "@type": "Thing",
+          "name": "животные",
+          "description": "Фотографии домашних животных"
+        }
+      ],
       "inLanguage": "ru-RU",
+      "datePublished": "2026-07-30",
       "dateModified": "2026-07-30"
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "@id": "https://maxxmoto.github.io/cat-daily/#breadcrumb",
       "itemListElement": [{
         "@type": "ListItem",
         "position": 1,
-        "name": "u'r daily cat",
+        "name": "u'r daily cat — главная",
         "item": "https://maxxmoto.github.io/cat-daily/"
       }]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://maxxmoto.github.io/cat-daily/#org",
+      "name": "u'r daily cat",
+      "url": "https://maxxmoto.github.io/cat-daily/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://maxxmoto.github.io/cat-daily/favicon-96.png",
+        "width": 96,
+        "height": 96
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "u'r daily cat",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB"
+      }
     }]
     </script>
 
-    <!-- Favicons -->
+    <!-- ======= OpenSearch ======= -->
+    <link rel="search" type="application/opensearchdescription+xml" href="/cat-daily/opensearch.xml" title="u'r daily cat" />
+
+    <!-- ======= RSS / Feeds ======= -->
+    <link rel="alternate" type="application/rss+xml" title="u'r daily cat RSS" href="/cat-daily/rss.xml" />
+
+    <!-- ======= Favicons (complete set) ======= -->
     <link rel="icon" type="image/png" sizes="16x16" href="/cat-daily/favicon-16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/cat-daily/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/cat-daily/favicon-96.png" />
     <link rel="icon" type="image/svg+xml" href="/cat-daily/favicon.svg" />
+    <link rel="shortcut icon" href="/cat-daily/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="/cat-daily/favicon-57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/cat-daily/favicon-60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/cat-daily/favicon-72.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="/cat-daily/favicon-76.png" />
     <link rel="apple-touch-icon" sizes="120x120" href="/cat-daily/favicon-96.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/cat-daily/favicon-96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/cat-daily/favicon-96.png" />
+    <link rel="mask-icon" href="/cat-daily/favicon.svg" color="#f472b6" />
     <link rel="manifest" href="/cat-daily/site.webmanifest" />
     <link rel="canonical" href="https://maxxmoto.github.io/cat-daily/" />
     <script type="module" crossorigin src="/cat-daily/assets/index-CeMJDiks.js"></script>
@@ -123,5 +241,8 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p>Включите JavaScript, чтобы увидеть котика!</p>
+    </noscript>
   </body>
 </html>
